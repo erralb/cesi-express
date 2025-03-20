@@ -1,0 +1,101 @@
+html,
+body {
+  margin: 0;
+  min-height: 500px;
+  font-family: sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: inherit;
+}
+
+canvas {
+  cursor: pointer;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: #0056b3;
+}
+
+#popup-overlay {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+#popup-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#popup {
+  background: rgba(0, 123, 255, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 80vh;
+  width: 600px;
+}
+
+#popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.scores-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
+.scores-table th,
+.scores-table td {
+  border: 1px solid white;
+  padding: 10px;
+}
