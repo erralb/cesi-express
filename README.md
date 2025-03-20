@@ -6,12 +6,12 @@
 git clone git@github.com:erralb/cesi-express.git
 cd cesi-express
 npm install
-npm install --save-dev nodemon
 ```
+
 ## Démarrage du serveur
 
 ```
-DEBUG=cesi-express:* npm start
+npm run dev
 ```
 
 ## Déploiement sur Vercel
@@ -39,7 +39,15 @@ npm install
 npm install --save-dev nodemon
 ```
 
-### Moifications à apporter pour Vercel
+Modifier le fichier `package.json` pour ajouter une version de Pug supérieure à 3.0.0.
+
+```
+"pug": "^3.0.3",
+```
+
+puis éxecuter à nouveau `npm install`.
+
+### Modifications à apporter pour Vercel
 
 ```
 mv app.js index.js
@@ -48,3 +56,7 @@ mv index.js api
 ```
 
 Modifier les chemins dans les fichiers `api/index.js` et `bin/www` pour qu'ils correspondent à la nouvelle organisation des fichiers.
+
+## Point d'attention
+
+Le répertoire `public` ne peut pas être vide sinon Vercel ne déploie pas le projet. Il faut donc ajouter au moins un fichier dans ce répertoire, même s'il n'est pas utilisé.
