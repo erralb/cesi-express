@@ -24,8 +24,17 @@ vercel dev
 
 Testez `http://localhost:3000` et `http://localhost:3000/users` pour vérifier que tout fonctionne correctement.
 
-Pour déployer sur Vercel : `vercel`
-Pour déployer sur l'url de production : `vercel --prod`.
+Pour déployer sur Vercel en mode `Preview` :
+
+```
+vercel
+```
+
+Pour déployer sur Vercel en `production` : 
+
+```
+vercel --prod
+```
 
 ## Procédure initiale 
 
