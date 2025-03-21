@@ -4,7 +4,6 @@
   "private": true,
   "main": "api/index.js",
   "scripts": {
-    "dev": "DEBUG=cesi-express:* nodemon ./bin/www",
     "start": "nodemon ./bin/www",
     "build": "node api/index.js"
   },
