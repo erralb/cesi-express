@@ -41,7 +41,9 @@ vercel --prod
 
 **Cette procédure est donnée à titre indicatif pour expliquer comment a été créé ce dépot. Elle n'est pas à suivre pour utiliser ce dépot.**
 
-Pour créer ce dépot en partant de express-generator, il faut exécuter les commandes suivantes :
+En démarrant un projet avec express-generator, l'architecture proposée n'est pas directement compatible avec Vercel.
+
+Pour rendre ce projet compatible avec Vercel, voilà les étapes qui ont été appliquées :
 
 ```
 npm install -g express-generator
