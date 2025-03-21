@@ -6,6 +6,7 @@
 git clone git@github.com:erralb/cesi-express.git
 cd cesi-express
 npm install
+npm install -g yarn
 ```
 
 ## Démarrage du serveur
@@ -36,7 +37,9 @@ Pour déployer sur Vercel en `production` :
 vercel --prod
 ```
 
-## Procédure initiale 
+## Procédure initiale - [NE PAS SUIVRE]
+
+**Cette procédure est donnée à titre indicatif pour expliquer comment a été créé ce dépot. Elle n'est pas à suivre pour utiliser ce dépot.**
 
 Pour créer ce dépot en partant de express-generator, il faut exécuter les commandes suivantes :
 
